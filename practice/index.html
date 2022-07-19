@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- js
+    let var const
+    object
+    function declaration function expression
+    hoisting
+    array method:- map,filter reduce;
+    event loop;
+    null and undefined
+    == and ===
+    arrow function normal function me defferent
+    closure
+    reverse
+    spread and rest operator
+    for vs foreach
+    primitive and non primitive -->
+
+    <button id="btn">Submit</button>
+    <script>
+      const arr1 = [1, 2, 3, 4, 5];
+      const arr2 = [4, 5, 6, 7, 8];
+
+      const result1 = arr1.filter((element) => {
+        if (arr2.includes(element)) {
+          return element;
+        }
+      });
+
+      1, 2, 3, 4, 5, 6;
+      console.log(result1);
+      const result = [...new Set([...arr1, ...arr2])]; //[]
+      console.log(result);
+
+      var first = [1, 2, 3];
+
+      var second = [2, 3, 4, 5];
+      var common = first.filter((x) => second.indexOf(x) !== -1);
+      console.log("The common elements are: " + common);
+      //   "use strict";
+      //[...arr1, ...arr2] = [1, 2, 3, 4, 5, 4, 5, 6, 7, 8];
+      //   function add(a, b) {
+      //     sum = a + b;
+      //     console.log(sum);
+      //   }
+      //   add(2, 3);
+
+      //   const btn = document.getElementById("btn");
+      //   btn.addEventListener("click", () => {
+      //     sayhi();
+      //   });
+
+      //   const sayhi = () => {
+      //     console.log("hiii");
+      //   };
+
+      const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+      const result3 = arr.filter((element) => {
+        if (element % 2 !== 0) {
+          return element;
+        }
+      });
+      console.log(result3);
+
+      //every element of arr should be equal to be every element of an other array
+      const arr3 = [1, 2, 3, 4, 5];
+      const arr4 = [1, 2, 3, 5, 4];
+      console.log(arr3 === arr4);
+      console.log("result5");
+      const result5 = arr3.every((element) => {
+        if (arr4.includes(element)) {
+          return true;
+        }
+      });
+      console.log(result5);
+    </script>
+  </body>
+</html>
